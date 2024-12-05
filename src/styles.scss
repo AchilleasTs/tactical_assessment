@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cdk-drag-preview {
+  border: 1px dashed #4a90e2;
+  background-color: rgba(74, 144, 226, 0.2);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag {
+  transition: transform 200ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.json-container {
+    font-family: monospace;
+    //background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.json-container .string { color: #6a9955; /* Green */ }
+.json-container .number { color: #b5cea8; /* Light Green */ }
+.json-container .boolean { color: #569cd6; /* Blue */ }
+.json-container .null { color: #dcdcaa; /* Yellow */ }
+.json-container .key { color: #0e6388; /* Cyan */ }
